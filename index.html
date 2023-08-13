@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="overall-container">
+
+        <div class = "container-grid-features">
+            <div class="interface-container">
+                <div id="indicator"> Random mode is OFF</div>
+                <p id = "colour-text"> Choose your colour!</p>
+                <input class = "feature" type="color" id="colorpicker" value="#0000ff">
+                <button class="feature" id = "random-mode">Toggle Random Mode!</button>
+                <button class="feature" id ="erasor">Erasor</button>
+                <button class="feature" id ="reset">Reset the Sketch Pad</button>
+                <input type="range" id="dimension" name="dimension" min="16" max="128" step="16"  value="16">
+                <span id="rangeValue">Box Dimension = 16x16</span>
+
+            </div>
+            <div class="grid-container"></div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

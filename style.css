@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif; /* Simple web-safe font */
+    background-color: #f4f6f8; /* Soft background color for whole page */
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 850px;
+    width: 850px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.box {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.overall-container {
+    display: flex;
+    justify-content: center;
+    margin-top:150px;
+}
+
+.interface-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    border-radius: 10px;     /* Soft corners */
+    padding: 20px;           /* Spacing inside the container */
+
+}
+
+
+.feature {  /* added this to add a border around each feature */
+    border: none;
+    margin: 5px;   /* added margin for better spacing */
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+
+    border-radius: 10px;
+    background-color:#3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 60px;
+    width: 200px;
+}
+
+.feature:hover {
+    background-color: #0f466a;  /* A shade darker than the original color for hover effect */
+    transform: scale(1.1);     /* Slightly enlarging the button on hover for emphasis */
+}
+
+.container-grid-features{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+#colorpicker{
+    cursor: pointer; /* Indicate to the user that it's clickable */
+    border: none;         /* Optional: Removes any default borders */
+}
+
+#colour-text{
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #0f466a;
+}
+#reset {
+    background-color: #e74c3c; /* Accent color for attention */
+}
+#reset:hover {
+    background-color: #c0392b; /* Darker shade on hover for reset button */
+}
+
+* {
+    transition: all 0.1s ease;
+}
+
+#indicator{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    background-color: rgb(238, 233, 226);
+    border: solid #0f466a;
+}
+
